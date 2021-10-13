@@ -1,0 +1,26 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "dependencies": {
+    "firebase": "^9.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/21people/sconncurating_1.git"
+  },
+  "author": "21people",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/21people/sconncurating_1/issues"
+  },
+  "homepage": "https://github.com/21people/sconncurating_1#readme"
+}
