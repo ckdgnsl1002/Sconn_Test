@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>스콘 큐레이팅</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, viewport-fit=cover, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="description" content="중고의류 큐레이팅 서비스" />
+    <meta property="og:title" content="스콘 큐레이팅" />
+    <meta property="og:url" content="https://www.sconncurating.com" />
+    <meta property="og:description" content="중고의류 큐레이팅 서비스" />
+    <link rel="shortcut icon" type="image/x-icon" href="/img/sconnberry.png" />
+    <!-- 나눔스퀘어/나눔스퀘어라운드 글꼴 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css"
+    />
+    <!-- 아이콘 -->
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/sconnberry.png" />
+    <link rel="apple-touch-icon" href="/img/sconnberry.png" />
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="page1411" class="page1411">
+      <div class="bg_white"></div>
+      <!-- logo -->
+      <div class="logo">
+        <img
+          src="/img/sconnberry.png"
+          alt="logo"
+          class="sconn_berry"
+          id="logo"
+        />
+      </div>
+      <div class="complete_message">
+        <h2>완성!</h2>
+        <h4>
+          추천정보가 성공적으로 <br />
+          수정되었습니다.
+        </h4>
+        <h6>중고거래, 앞으로 스콘과 함께해요!</h6>
+      </div>
+      <div class="caution">
+        <div class="caution_message">
+          <h3>주의!</h3>
+          <h6>
+            스콘 카카오톡 채널을 추가하지 않으면
+            <br />추천상품 소식을 받아볼 수 없어요.
+          </h6>
+          <a
+            id="kakao-talk"
+            href="http://pf.kakao.com/_ZTQes"
+            class="kakao_talk"
+            target="_blank"
+            onclick="addChannel();"
+          >
+            <button type="button" id="kakaotalk" class="kakaotalk_channel">
+              카카오톡 채널 추가하기
+            </button>
+          </a>
+        </div>
+      </div>
+      <button type="button" id="go-home" class="go_home">홈으로 가기</button>
+    </div>
+    <script type="text/javascript">
+      function addChannel() {
+        Kakao.Channel.addChannel({
+          container: "#kakao-talk",
+          channelPublicId: "_ZTQes",
+        });
+      }
+    </script>
+    <script>
+      let viewportParams2 =
+        ", initial-scale=1.0, user-scalable=no, viewport-fit=cover";
+      let metaViewport = document.querySelector("meta[name=viewport]");
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+      let viewportParams =
+        "width=device-width" + ", height=" + height + viewportParams2;
+      metaViewport.setAttribute("content", viewportParams);
+    </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDtCuHQza3IyoLugijCLx_XMekUp6Tb8QU",
+        authDomain: "sconncurating-db.firebaseapp.com",
+        projectId: "sconncurating-db",
+        databaseURL: "gs://sconncurating-db.firebaseio.com",
+        storageBucket: "sconncurating-db.appspot.com",
+        messagingSenderId: "468466997",
+        appId: "1:468466997:web:3b2edda7b84c24dc07607c",
+        measurementId: "G-JBSZV0W9QB",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      var db = firebase.firestore();
+      var storage = firebase.storage();
+      var storageRef = storage.ref();
+    </script>
+    <script type="text/javascript" src="/js/1.4.1.1.js"></script>
+  </body>
+</html>

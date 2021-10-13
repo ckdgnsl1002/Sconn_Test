@@ -1,0 +1,27 @@
+{
+  "name": "sconn_prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "dependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "del": "^6.0.0",
+    "firebase": "^8.7.1",
+    "firebase-tools": "^9.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/21people/sconn-prototype.git"
+  },
+  "author": "21people",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/21people/sconn-prototype/issues"
+  },
+  "homepage": "https://github.com/21people/sconn-prototype#readme"
+}
