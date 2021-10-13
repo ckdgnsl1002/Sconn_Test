@@ -1,0 +1,7 @@
+<h1>프로파일 만들기</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{profile_form}}
+    <button type="submit">등록하기</button>
+</form>

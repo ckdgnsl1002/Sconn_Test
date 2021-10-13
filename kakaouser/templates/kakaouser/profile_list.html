@@ -1,0 +1,8 @@
+<h1>현재 등록된 유저의 리스트</h1>
+
+{% if profile_list %}
+{% for pf in profile_list %}
+<h3>{{pf}}</h3>
+<p>{{pf.user}} - {{pf.profile_img_url}} - {{pf.is_follow_channel}}</p>
+{% endfor %}
+{% endif %}
