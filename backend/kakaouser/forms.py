@@ -5,4 +5,4 @@ from .models import Profile
 class ProfileForm(forms.ModelForm):
     class Meta:
         model=Profile
-        fields=['user','profile_img_url', 'is_follow_channel']
+        fields=['user','phone_number','thumbnail_url', 'is_follow_channel']
